@@ -21,20 +21,32 @@ let dictionary = {
     'vcl' : 'vo cung luon',
     'btw' : 'between',
 }
-//console.log(dictionary);
-let userIn = prompt('Nhap vao : ');
+// console.log(Object.keys(dictionary)) // ep sang kieu array => in ra key : value
+// in ra dictionary
+Object.keys(dictionary).forEach((value,index) =>{
+    console.log(`${index + 1}. ${value}`)
+})
 
-if (a = userIn in dictionary) {
-    console.log(dictionary[userIn]);
-}
-else {
-    yesNo = prompt('Want to add Dic ? Yes or No? ').toLowerCase();
-    if (yesNo == 'yes') {
-        userContent = prompt('Your value : ');
-        dictionary[userIn] = userContent;
-        console.log(dictionary);
+while(true) {
+    
+    
+    let userIn = prompt('Nhap vao : ').toLowerCase();
+    
+    if (userIn == 'end') {
+        break;
     }
-    else {
-        console.log('Thank you!')
+    if (a = userIn in dictionary) {
+        console.log(dictionary[userIn]);
+    } else {
+        yesNo = prompt('Want to add Dic ? Yes or No? ').toLowerCase();
+        if (yesNo == 'yes') {
+            userContent = prompt('Your value : ');
+            dictionary[userIn] = userContent;
+            console.log(dictionary);
+        }
+        else {
+            console.log('Thank you!')
+        }
     }
+    
 }

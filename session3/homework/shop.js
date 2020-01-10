@@ -3,7 +3,7 @@ menu = ['Sach', 'Vo', 'Quan', 'Ao', 'But', 'Giay', 'Tay']
 
 if (userInput == 'C') {
     newEle = prompt('Want to creat : ')
-    menu.push(newEle)
+    menu.push(newEle) // push len create
     console.log(menu)
 }
 
@@ -27,7 +27,7 @@ else if (userInput == 'U') {
     if (updateInput == 'v') {
         yourValue = prompt('Your Value : ')  
         valueUpdate = prompt('Your new :')
-        for (let i = 0; i < menu.length; i++) {
+        for (let i = 0; i < menu.length; i++) { // kiem tra < length()
             console.log(menu[i])
             if (yourValue == menu[i]) {
                 menu[i] = valueUpdate
