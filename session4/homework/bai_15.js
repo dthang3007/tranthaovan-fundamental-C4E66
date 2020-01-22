@@ -1,30 +1,4 @@
-// let obj = {
-//     hits : [
-//         {
-//             benifits : [
-//                 {
-//                     benefitIconName: 'fa-dollar',
-//                     benefitName: 'Bonus',
-//                     benefitValue: '14 tháng lương, đánh giá tăng lương 2 lần/ năm',
-//                     benefitId: 1
-//                 },
-//                 {
-//                     benefitIconName: 'fa-user-md',
-//                     benefitName: 'Healthcare Plan',
-//                     benefitValue: 'Hưởng đầy đủ các loại bảo hiểm theo quy định của nhà nước, các trợ cấp theo quy định của công ty',
-//                     benefitId: 2
-//                 },
-//                 {
-//                     benefitIconName: 'fa-file-image-o',
-//                     benefitName: 'Paid Leave',
-//                     benefitValue: 'Có cơ hội học hỏi nâng cao kiến thức chuyên môn và cơ hội thăng tiến',
-//                     benefitId: 3
-//                 }
-//             ]
-//         }
-//     ]
-// }
-let obj = {
+let data = {
     hits: [
         {
             benefits: [
@@ -956,27 +930,22 @@ let obj = {
     ]
 }
 
-console.log(obj);
+// console.log(data.hits);
+// console.log(data.hits[0]);
+// console.log(data.hits[0].jobTitle)
+// console.log(data.hits[0].benefits)
 
+let arr = data.hits;
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i].benefits);
+//     let b = arr[i].benefits;
+//     for (let j = 0; j < b.length; j++) {
+//         console.log(b[j].benefitValue);
+//     }
+// }
 
-
-// answer
-// 3.1. object
-// 3.2. array
-// 3.3.  e job’s title, locations, salary, benefits, skills
-// and requirements
-
-
-let a = data.hits; // truy cap array
-for (let i = 0; i < a.length; i++) {
-    console.log(a[i].jobTitle);
-    console.log(a[i].locations);
-    console.log(a[i].jobSalary);
-    console.log(a[i].benefits);
-    console.log(a[i].skills);
-    console.log(a[i].jobRequirement);
-    //console.log('-'*15);
-    console.log('\n\n')
+for (let i = 0; i < arr.length; i++) {
+    arr[i].skills.forEach((v,i) => {
+        console.log(`${i+1}. ${v}`);
+    })
 }
-
-// not completed!

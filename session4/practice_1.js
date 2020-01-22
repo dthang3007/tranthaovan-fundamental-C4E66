@@ -50,3 +50,32 @@ while(true) {
     }
     
 }
+
+
+// c2
+
+  
+// diction={
+//     'any':'anh nguoi yeu',
+//     'btw':'by the way',
+//     'anw':'any way',
+// }
+// let userInput=prompt("Nhap vao tu ma` ban muon xem ")
+// if(userInput=='any'){
+//     console.log(diction[userInput])
+// }else if(userInput=='btw'){
+//     console.log(diction[userInput])
+
+// }else if(userInput=='anw'){
+//     console.log(diction[userInput])
+// }else{
+//     alert("khong co trong tu dien")
+//     let addInput=prompt("Ban co muon them vao tu dien k Y/N")
+//     if(addInput=='Y'){
+//         diction.userInput=userInput
+//     }else if(addInput=='N'){
+//         alert("Cam on ban")
+//     }else{
+//         alert("Ban nhap sai roi")
+//     }
+// }
