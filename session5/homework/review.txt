@@ -1,0 +1,52 @@
+1. Why should we use functions at all?
+- Sử dụng lại một cách dễ dàng khi gọi lại và dùng nhiều lần
+- Function rõ ràng thì sẽ dễ phân tích được chức năng nó đang làm là gì, code không dài nhưng vẫn rõ ràng bởi cái định nghĩa của functions
+
+
+
+2. How to define/declare a function?
+function nameHere (variableHere) {
+    block code;
+    or console.log('here');
+    return st here;
+}
+
+
+
+3. How to call/use a function?
+console.log(nameHere(truyền biến vào đây));
+nameHere(truyền biến vào đây);
+
+
+
+4. What is return, why and how do we use it?
+- return là câu lệnh trả về 1 kết quả mà do người lập trình đặt
+nó sẽ thường trả về 1 kiểu số :v 
+- chỉ cần return phát ở cuối function, khi gọi function ra sẽ có kqua return của mình
+
+
+
+5. Do we have to use return in every function?
+Không thường dùng
+Return thường dùng cho kiểu số
+còn lại in ra các câu lệnh dùng console, nhuwng return 0; là dừng
+
+
+6. What are function arguments/parameters, why and how we use it?
+truyền tham số hoặc biến vào function
+giúp xử lý các bài toán dễ hơn khi có các số và phép tính
+
+USE : 
+
+function sum(a,b) {
+    let sum = 0;
+    return (a+b);
+}
+console.log(2,3); // 2+3=5
+
+
+7. How to use function from a different file other than our currently working file?
+- viết 1 function.js
+- gọi function ở 1 file khác trong folder đó
+- ở file .html thì gọi cả 2 file js vừa viết trên
+(hình ảnh homework)
