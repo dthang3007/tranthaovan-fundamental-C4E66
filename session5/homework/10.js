@@ -10,3 +10,6 @@ for (let j = 0; j < arr2.length; j++) {
     console.log(arr2[j]);
 }
 
+if (arr1[0] >= arr2[0] && arr1[1] >= arr2[1]) {
+
+}

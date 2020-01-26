@@ -9,7 +9,6 @@
 
 // let arr = prompt().split();
 // console.log
-
 // let fruit = ['cam', 'quyt', 'tao', 'oi', 'dua hau'];
 // let arr1 = [...fruit];
 // console.log(fruit);

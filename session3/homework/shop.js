@@ -75,3 +75,10 @@ else if (userInput == 'D') {
         console.log(menu)
     }
 }
+
+let person = {
+    name : 'Van',
+    age : 18,
+    school : TLU
+}
+

@@ -6,3 +6,5 @@ for (let i = 0; i < userIn.length; i++) {
     }
 }
 alert('The smallest number is ' + min);
+
+// Math.min(...userIn)

@@ -11,3 +11,5 @@ let numIn = prompt().split(',');
 
 let a = numIn.filter(x => x % 2 != 0);
 console.log(a);
+
+
