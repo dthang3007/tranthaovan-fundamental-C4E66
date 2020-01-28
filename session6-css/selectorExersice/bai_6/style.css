@@ -1,0 +1,6 @@
+[hreftarget] {
+    color: black;
+}
+span > p {
+    color: yellow;
+}
