@@ -1,0 +1,10 @@
+.row {
+    width: 500px;
+    height: 135px;
+    display: block;
+}
+img {
+    background-repeat: repeat-y;
+    width: 35px;
+    height: 35px;
+}
