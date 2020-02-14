@@ -1,0 +1,15 @@
+.img {
+    width: 500px;
+    height: 135px;
+}
+
+
+img {
+    width: 75px;
+    height: 75px;
+    background-repeat: repeat;
+    /* background-repeat: repeat-x; --> repeat horizontally*/ 
+    /* background-repeat: repeat-y; --> repeat vertically*/ 
+    /* background-repeat: no-repeat; --> no-repeat*/ 
+    
+}
