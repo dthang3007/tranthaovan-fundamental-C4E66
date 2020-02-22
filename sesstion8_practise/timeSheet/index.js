@@ -44,15 +44,64 @@ timeSheetData.forEach((value, index) => {
                 <td>${value.project}</td>
                 <td>${value.task}</td>
                 <td>${value.time_spent}</td>
+                <td> <button id = 'line-${index}'> X </button> </td> 
             </tr>
         </tbody>
     `
     bodyTable.innerHTML += html;
 });
 
+// task 5 + 6
+// input => value _ DOM
+var addButton = document.getElementById('add-button');
+var inputProject = document.getElementById('project');
+var inputTask = document.getElementById('task');
+var inputTimeSheet = document.getElementById('timesheet');
+console.dir(inputProject);
+addButton.addEventListener('click', () => {
+    let addContentHTML = `
+        <tbody id="table-body">
+            <tr>
+                <td>${inputProject.value}</td>
+                <td>${inputTask.value}</td>
+                <td>${inputTimeSheet.value}</td>
+            </tr>
+        </tbody>
+    `
+    // += la vi no con giu lai gia tri cu truoc kia cua no!
+    bodyTable.innerHTML += addContentHTML;
+})
 
-// action1 = it time
-// action 2 = nhieu time  aysn
-// action 3 = it time
+// task 8
+
+console.dir(bodyTable.children)
+// console.dir(bodyTable.children[0].children[0].innerHTML);
+
+// console.dir(bodyTable.children[0]);
+var one = bodyTable.children;
 
 
+// for (let i = 0; i < bodyTable.children.length; i++) {
+//     console.log(bodyTable.children[i]);
+// }
+
+var oneRun = bodyTable.rows;
+oneRun.forEach((value, index) => {
+    console.log(value)
+})
+
+
+imeSheetData.forEach((value, index) => {
+
+    let innerHTML_Here = `
+        <tbody id="table-body">
+            <tr>
+                <td>${value.project}</td>
+                <td>${value.task}</td>
+                <td>${value.time_spent}</td>
+                <td> <button id = 'line-${index}'> X </button> </td> 
+            </tr>
+        </tbody>
+    `
+    bodyTable.innerHTML += html;
+});
