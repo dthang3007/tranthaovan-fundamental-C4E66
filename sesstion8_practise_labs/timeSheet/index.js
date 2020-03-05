@@ -85,13 +85,13 @@ var one = bodyTable.children;
 //     console.log(bodyTable.children[i]);
 // }
 
-var oneRun = bodyTable.rows;
-oneRun.forEach((value, index) => {
-    console.log(value)
-})
+// var oneRun = bodyTable.;
+// oneRun.forEach((value, index) => {
+//     console.log(value)
+// })
 
 
-imeSheetData.forEach((value, index) => {
+timeSheetData.forEach((value, index) => {
 
     let innerHTML_Here = `
         <tbody id="table-body">
@@ -99,9 +99,13 @@ imeSheetData.forEach((value, index) => {
                 <td>${value.project}</td>
                 <td>${value.task}</td>
                 <td>${value.time_spent}</td>
-                <td> <button id = 'line-${index}'> X </button> </td> 
+                <td>    
+                    <td> <button id = 'line-${index}-Delete'> X </button> </td>
+                    <td> <button id = 'line-${index}-Update'> U </button> </td>
+                </td>
             </tr>
         </tbody>
     `
-    bodyTable.innerHTML += html;
+    bodyTable.innerHTML += innerHTML_Here;
 });
+
